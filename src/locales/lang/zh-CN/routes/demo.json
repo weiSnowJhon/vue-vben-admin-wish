@@ -174,5 +174,12 @@
     "authColumn": "权限列",
     "resizeParentHeightTable": "继承父元素高度",
     "vxeTable": "VxeTable"
+  },
+  "wish":{
+    "table":{
+      "table":"WishTable",
+      "basic":"佳参考通用表格",
+      "jrColumnTable":"佳参考列查询配置"
+    }
   }
 }

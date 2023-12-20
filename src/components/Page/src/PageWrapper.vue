@@ -23,6 +23,7 @@
       <slot></slot>
     </div>
 
+    <!-- 页脚插槽 -->
     <PageFooter v-if="getShowFooter" ref="footerRef">
       <template #left>
         <slot name="leftFooter"></slot>
@@ -60,9 +61,9 @@
   });
 
   const props = defineProps({
-    title: propTypes.string,
-    dense: propTypes.bool,
-    ghost: propTypes.bool,
+    title: propTypes.string, //自定义标题
+    dense: propTypes.bool, //
+    ghost: propTypes.bool, //改变颜色
     headerSticky: propTypes.bool,
     headerStyle: Object as PropType<CSSProperties>,
     content: propTypes.string,
@@ -128,6 +129,7 @@
     };
   });
 
+  //控制是否展示Header
   const getShowHeader = computed(
     () => props.content || slots?.headerContent || props.title || getHeaderSlots.value.length,
   );

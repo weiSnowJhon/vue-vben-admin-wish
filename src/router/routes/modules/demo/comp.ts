@@ -266,6 +266,34 @@ const comp: AppRouteModule = {
       ],
     },
     {
+      path: 'wish/table',
+      name: 'WishTableDemo',
+      redirect: '/comp/wish/table/basic',
+      component: getParentLayout('TableDemo'),
+      meta: {
+        // icon: 'carbon:table-split',
+        title: t('routes.demo.wish.table.table'),
+      },
+      children: [
+        {
+          path: 'basic',
+          name: 'WishBasicTableDemo',
+          component: () => import('@/views/demo/wish/table/UseTable.vue'),
+          meta: {
+            title: t('routes.demo.wish.table.basic'),
+          },
+        },
+        {
+          path: 'jrColumnTable',
+          name: 'WishJrColumnTableDemo',
+          component: () => import('@/views/demo/wish/table/JrColumnTable.vue'),
+          meta: {
+            title: t('routes.demo.wish.table.jrColumnTable'),
+          },
+        },
+      ],
+    },
+    {
       path: 'transition',
       name: 'transitionDemo',
       component: () => import('@/views/demo/comp/transition/index.vue'),
