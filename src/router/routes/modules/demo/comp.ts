@@ -278,17 +278,57 @@ const comp: AppRouteModule = {
         {
           path: 'basic',
           name: 'WishBasicTableDemo',
-          component: () => import('@/views/demo/wish/table/UseTable.vue'),
+          component: () => import('@/views/demo/wish/table/JrBasicTable.vue'),
           meta: {
-            title: t('routes.demo.wish.table.basic'),
+            title: t('routes.demo.wish.table.jrBasic'),
           },
         },
         {
-          path: 'jrColumnTable',
-          name: 'WishJrColumnTableDemo',
-          component: () => import('@/views/demo/wish/table/JrColumnTable.vue'),
+          path: 'jrQueryConditionSetting',
+          name: 'WishJrQueryConditionSetting',
+          component: () => import('@/views/demo/wish/table/JrQueryConditionSetting.vue'),
           meta: {
-            title: t('routes.demo.wish.table.jrColumnTable'),
+            title: t('routes.demo.wish.table.jrQueryConditionSetting'),
+          },
+        },
+        {
+          path: 'jrQueryConditionSettingTable',
+          name: 'WishJrQueryConditionSettingTable',
+          component: () => import('@/views/demo/wish/table/JrQueryConditionSettingTable.vue'),
+          meta: {
+            title: t('routes.demo.wish.table.jrQueryConditionSettingTable'),
+          },
+        },
+        {
+          path: 'jrColumnShowSettingTable',
+          name: 'WishJrColumnShowSettingTable',
+          component: () => import('@/views/demo/wish/table/JrColumnShowSettingTable.vue'),
+          meta: {
+            title: t('routes.demo.wish.table.jrColumnShowSettingTable'),
+          },
+        },
+        {
+          path: 'jrQueryConditionExpendTable',
+          name: 'WishJrQueryConditionExpendTable',
+          component: () => import('@/views/demo/wish/table/JrQueryConditionExpendTable.vue'),
+          meta: {
+            title: t('routes.demo.wish.table.jrQueryConditionExpendTable'),
+          },
+        },
+        {
+          path: 'jrQueryConditionExpendEditForm',
+          name: 'WishJrQueryConditionExpendEditForm',
+          component: () => import('@/views/demo/wish/table/JrQueryConditionExpendEditForm.vue'),
+          meta: {
+            title: t('routes.demo.wish.table.jrQueryConditionExpendEditForm'),
+          },
+        },
+        {
+          path: 'jrDeptTree',
+          name: 'WishJrDeptTree',
+          component: () => import('@/views/demo/wish/table/JrDeptTree.vue'),
+          meta: {
+            title: t('routes.demo.wish.table.jrDeptTree'),
           },
         },
       ],

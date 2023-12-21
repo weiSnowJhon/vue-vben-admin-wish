@@ -1,30 +1,26 @@
 <!-- 预置列表 -->
 <template>
-  <div>
-    <a-row>
-      <div class="m-4 mr-0 overflow-hidden bg-white">
-        <a-space>
-          <home-outlined />
-          <setting-filled />
-          <smile-outlined />
-          <sync-outlined spin />
-          <smile-outlined :rotate="180" />
-          <loading-outlined />
-        </a-space>
-      </div>
-    </a-row>
-    <a-row>
-      <div class="m-4 mr-0 overflow-hidden bg-white">
-        <BasicTree
-          toolbar
-          treeWrapperClassName="h-[calc(100%-35px)] overflow-auto"
-          :clickRowToExpand="false"
-          :treeData="treeData"
-          :fieldNames="{ key: 'id', title: 'deptName' }"
-          @select="handleSelect"
-        />
-      </div>
-    </a-row>
+  <div class="w-100">
+    <div class="w-full m-4 mr-0 overflow-hidden bg-white">
+      <a-space>
+        <home-outlined />
+        <setting-filled />
+        <smile-outlined />
+        <sync-outlined spin />
+        <smile-outlined :rotate="180" />
+        <loading-outlined />
+      </a-space>
+    </div>
+    <div class="w-full m-4 mr-0 overflow-hidden bg-white">
+      <BasicTree
+        toolbar
+        treeWrapperClassName="h-[calc(100%-35px)] overflow-auto"
+        :clickRowToExpand="false"
+        :treeData="treeData"
+        :fieldNames="{ key: 'id', title: 'deptName' }"
+        @select="handleSelect"
+      />
+    </div>
   </div>
 </template>
 <script lang="ts" setup>

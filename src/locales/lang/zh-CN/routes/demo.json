@@ -178,8 +178,14 @@
   "wish":{
     "table":{
       "table":"WishTable",
-      "basic":"佳参考通用表格",
-      "jrColumnTable":"佳参考列查询配置"
+      "jrBasic":"佳参考通用表格",
+      "jrQueryConditionSetting":"佳参考查询条件配置预览",
+      "jrQueryConditionSettingTable":"佳参考查询条件配置",
+      "jrColumnShowSettingTable":"佳参考表格列表展示配置",
+      "jrQueryOptionTree":"佳参考列表查询方案树",
+      "jrQueryConditionExpendTable":"佳参考查询条件格式扩展列表",
+      "jrQueryConditionExpendEditForm":"佳参考查询条件格式扩展新增编辑",
+      "jrDeptTree":"佳参考列表查询方案树"
     }
   }
 }

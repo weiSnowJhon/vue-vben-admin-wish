@@ -55,7 +55,7 @@
   import { PageWrapper } from '@/components/Page';
   import { ref } from 'vue';
 
-  defineOptions({ name: 'JrColumnTable' });
+  defineOptions({ name: 'JrQueryConditionSetting' });
   const activeKey = ref('1');
   const searchInfo = ref<Recordable>({ type: '1', name: '123' });
   const columnInfos = ref([
